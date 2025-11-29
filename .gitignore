@@ -1,0 +1,11 @@
+#ignora la carpeta de caché
+__pychache__/
+
+#ignorar carpetas de entornos virtuales
+venv/
+env/
+
+#ignorar arcivos temporales
+*.tmp
+*.log
+
