@@ -21,7 +21,23 @@ for carpeta in carpetas_a_crear:
 
 print("\nContenido del directorio:")
 
+#muestra en una lista los elementos del directorio
 contenido= os.listdir(directorio_base)
 for elementos in contenido:
     print(f"- {elementos}")
+
+nombre_antiguo = "prueba_temporal.txt"
+nombre_nuevo = "archivo_renombrado.txt"
+
+#creamos un achov con with open con le nombre temporal
+with open(nombre_antiguo, "w") as f:
+    f.write("Este es un archivo de prueba :3")
+    
+print(f"\nArchivo: {nombre_antiguo}, creado")
+
+#mueve o renombra archivos 
+os.rename(nombre_antiguo, nombre_nuevo)
+
+print(f"Archivo renombrado como: {nombre_nuevo}.")
+    
 
