@@ -39,5 +39,7 @@ print(f"\nArchivo: {nombre_antiguo}, creado")
 os.rename(nombre_antiguo, nombre_nuevo)
 
 print(f"Archivo renombrado como: {nombre_nuevo}.")
+print("hola")
     
+archivo_a_eliminar = nombre_nuevo
 
